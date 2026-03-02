@@ -1,0 +1,34 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - index.qmd
+    - about.qmd
+
+
+website:
+  title: "stats19_stats"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: maps/cas_location.html
+        text: Casualty location Bristol
+      - href: maps/cas_veh_lsoa.html
+        text: Home LSOA Bristol
+      - href: tables/cas_col_per_km.html
+        text: Cas col by road Bristol
+      - href: tables/cas_col_per_km.html
+        text: cost breakdown Bristol
+      - about.qmd
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+
+
+
